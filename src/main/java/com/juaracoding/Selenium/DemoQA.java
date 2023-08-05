@@ -32,6 +32,8 @@ public class DemoQA {
 
         driver.quit();
         System.out.println("Keluar dari Browser");
+
+        System.out.println("aman Gan!!");
     }
 
     public static void delay(){
