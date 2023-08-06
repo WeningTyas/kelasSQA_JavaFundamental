@@ -13,8 +13,8 @@ public class KaryawanTest {
     public void testFirstName(){
         String actual = "Tia";
         karyawan.setFirstName(actual);
-        String namaDepan = karyawan.getFirstName();
-        Assert.assertEquals(namaDepan, "Tia");
+        String espect = karyawan.getFirstName();
+        Assert.assertEquals(actual, espect);
     }
     @Test
     public void testLastName(){

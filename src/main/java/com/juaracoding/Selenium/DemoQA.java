@@ -13,12 +13,26 @@ public class DemoQA {
         driver.get("https://demoqa.com/text-box");
         System.out.println("Buka Browser dan buka URL");
 
+        // Proses scraping
+        String titlePage = driver.findElement(By.className("main-header")).getText();
+        System.out.println(titlePage);
+        // ambil judul halaman html yg bertag <title></title>
+        String titleHeader = driver.getTitle();
+        System.out.println(titleHeader);
+
         driver.findElement(By.id("userName")).sendKeys("Juara Coding");
         driver.findElement(By.id("userEmail")).sendKeys("email@email.com");
         driver.findElement(By.id("currentAddress")).sendKeys("Jakarta");
         driver.findElement(By.id("permanentAddress")).sendKeys("Jakarta");
         driver.findElement(By.id("submit")).click();
         System.out.println("Isi formnya");
+
+        //validasi if else di assert
+        if(titlePage == "Text Box"){ // atau bisa pakai .equalsIgnoreCase()
+            System.out.println("Oke!");
+        } else {
+            System.out.println("Fail");
+        }
 
         // Ini untuk scroll layar
         JavascriptExecutor jx = (JavascriptExecutor) driver;
@@ -32,8 +46,6 @@ public class DemoQA {
 
         driver.quit();
         System.out.println("Keluar dari Browser");
-
-        System.out.println("aman Gan!!");
     }
 
     public static void delay(){
