@@ -60,12 +60,22 @@ public class BrowserStack {
             // Test pakai tombol Back
             driver.navigate().back();
             System.out.println("Kembali");
+
             driver.navigate().refresh();
+            delay(5);
 
-
+            /*
+            * Gk usah panik emng kamvret yg dibawah ini
+            * pastin nnti ada kendala di sini ↓ pdhl td diatas udh oke
+            * kadang bisa, kadang nggak soalnya
+            * By.xpath("//*[@id=\"product-nav\"]/ul/li")
+            * */
 
             // Hover menu Produk
-            WebElement btnMenuProduct = driver.findElement(By.xpath("//*[@id=\"product-nav\"]/ul/li"));
+            //// Diantara 3 ini yg bisa ↓ biasanya 3x baru berhasil =3=
+            //WebElement btnMenuProduct = driver.findElement(By.xpath("//*[@id=\"product-nav\"]/ul/li"));
+            //WebElement btnMenuProduct = driver.findElement(By.xpath("//button[contains(@id, 'product-menu')]"));
+            WebElement btnMenuProduct = driver.findElement(By.xpath("//button[@id='product-menu-toggle']"));
             action.moveToElement(btnMenuProduct).perform();// ← ini untuk hover
             System.out.println("klik produk menu");
 

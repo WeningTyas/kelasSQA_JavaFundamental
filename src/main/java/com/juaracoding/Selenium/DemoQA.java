@@ -15,6 +15,9 @@ public class DemoQA {
         driver.get("https://demoqa.com/text-box");
         System.out.println("Buka Browser dan buka URL");
 
+        //untuk membesarkan layar
+        driver.manage().window().maximize();
+
         // Proses scraping
         String titlePage = driver.findElement(By.className("main-header")).getText();
         System.out.println(titlePage);
@@ -26,23 +29,21 @@ public class DemoQA {
         driver.findElement(By.id("userEmail")).sendKeys("email@email.com");
         driver.findElement(By.id("currentAddress")).sendKeys("Jakarta");
         driver.findElement(By.id("permanentAddress")).sendKeys("Jakarta");
-        driver.findElement(By.id("submit")).click();
-        System.out.println("Isi formnya");
-
-        //validasi if else di assert
-        if(titlePage == "Text Box"){ // atau bisa pakai .equalsIgnoreCase()
-            System.out.println("Oke!");
-        } else {
-            System.out.println("Fail");
-        }
 
         // Ini untuk scroll layar
         JavascriptExecutor jx = (JavascriptExecutor) driver;
         jx.executeScript("window.scrollBy(0,500)"); // scroll vertikal 500px
         //jx.executeScript("window.scrollBy(500,0)"); // scroll horizontal 500px
 
-        //untuk membesarkan layar
-        driver.manage().window().maximize();
+        driver.findElement(By.id("submit")).click();
+        System.out.println("Isi formnya");
+
+        //validasi if else di assert
+        if(titlePage.contains("Text Box")){ // atau bisa pakai .equalsIgnoreCase()
+            System.out.println("Oke!");
+        } else {
+            System.out.println("Fail");
+        }
 
         // delay();
 
