@@ -3,6 +3,8 @@ package com.juaracoding.Selenium;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.util.concurrent.TimeUnit;
+
 public class DemoQA {
     public static void main(String[] args) {
         // web Demo https://demoqa.com/text-box //
@@ -42,7 +44,10 @@ public class DemoQA {
         //untuk membesarkan layar
         driver.manage().window().maximize();
 
-        delay();
+        // delay();
+
+        //Waiting Element (per 10 detik)
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         driver.quit();
         System.out.println("Keluar dari Browser");
