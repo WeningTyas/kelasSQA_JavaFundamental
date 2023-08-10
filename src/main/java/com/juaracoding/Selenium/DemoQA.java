@@ -9,7 +9,7 @@ public class DemoQA {
     public static void main(String[] args) {
         // web Demo https://demoqa.com/text-box //
 
-        String path = "E:\\Bootcam\\ChromeDriver\\chromedriver.exe";
+        String path = "E:\\Bootcam\\App\\ChromeDriver\\chromedriver.exe";
         System.setProperty("webdriver.chrome.driver", path);
         WebDriver driver = new ChromeDriver();
         driver.get("https://demoqa.com/text-box");

@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Main {
     public static void main(String[] args) {
         // Setting untuk WebDrivernya
-        System.setProperty("webdriver.chrome.driver", "E:\\Bootcam\\ChromeDriver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "E:\\Bootcam\\App\\ChromeDriver\\chromedriver.exe");
         // Panggil WebDriver-nya untuk menjalankan browser
         WebDriver driver = new ChromeDriver(); //constructor/special methode
 
