@@ -15,7 +15,7 @@ public class Percabangan {
         if (!false){// ← ini akan di eksekusi
             System.out.println("Salah!");
         }
-        // N/b: Coba aja di Run satu-satu
+        // N/b: Coba aja di Run satu-satu, tp dikomen dulu biar yakin -w-
 
         System.out.println();
         ////////////////////////////////////////////////////////////////
@@ -23,15 +23,15 @@ public class Percabangan {
         ///============= if else... =================///
         int angka = 28;
         if (angka % 2 == 0){ // 0 == 0 (true)
-            System.out.println(angka+" adalah bilangan genap");
+            System.out.println(angka +" adalah bilangan genap");
         } else { // 1 == 0 (false)
-            System.out.println(angka+" adalah bilangan ganjil");
+            System.out.println(angka +" adalah bilangan ganjil");
         }
 
         System.out.println();
         ////////////////////////////////////////////////////////////////
 
-        ///============= if majemuk =================///
+        ///============= if majemuk (if pakai else) =================///
         // 91-100 = A, 84-90 = B, 75-83 = C, D
         int nilai = 40;
         if (nilai >= 91 && nilai <= 100){

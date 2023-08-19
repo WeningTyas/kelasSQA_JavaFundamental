@@ -23,7 +23,8 @@ public class Kotak {
         Date tanggal = new Date();
         System.out.println(tanggal);
 
-        //instance object
+        // ↓ instance object namanya ini
+        //   panggil class di class lain
         Kotak kotak = new Kotak(5);
         System.out.println("Luas kotak "+kotak.luas());
     }

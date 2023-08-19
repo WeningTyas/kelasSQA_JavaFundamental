@@ -63,7 +63,6 @@ public class ArrayJava {
             System.out.println(i);
         }
 
-
         System.out.println("// -------------------------- //");
         System.out.println();
         /////////////////////////////////////////////////////////////////////////

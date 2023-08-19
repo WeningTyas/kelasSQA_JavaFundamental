@@ -63,12 +63,13 @@ public class OrangeHRM {
         //// Test pakai tombol Back
         //driver.navigate().back();
 
-        ////Ambil jumlah form input di halaman tsb
+        ////Ambil jumlah form input di halaman tsb                    ↓ ini HTML penampung inputnya
         List<WebElement> listInput = driver.findElements(By.xpath("//input"));
         // ini pakai driver.findElements() ↑
         System.out.println(listInput.size());
 
         //Masukkan kembali nilainya
+        // Bacanya: di input (1) masukkan "Admin"
         listInput.get(1).sendKeys("Admin");
         System.out.println("Input");
 

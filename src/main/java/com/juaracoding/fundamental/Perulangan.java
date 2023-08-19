@@ -6,7 +6,7 @@ public class Perulangan {
     public static void main(String[] args) {
 
         //================ Perulangan / Looping ====================//
-        // ↓ tulis aja "fori" nanti keluar ini
+        // ↓ tulis aja "fori" + enter nanti keluar ini
         for (int i = 0 ; i < 5; i++){
             // System.out.println(i);
             System.out.print(i + " ");
@@ -16,11 +16,12 @@ public class Perulangan {
         System.out.println();
         ////////////////////////////////////////////////////////////////
 
-        //  ↓ for (inisiasi, kondisi, in/decrement)
+        //  ↓ for (inisiasi; kondisi; in/decrement)
         for (int i = 5; i > 0; i--){
             System.out.print(i + " ");
         }
         // Hasil: 5,4,3,2,1 karena < 5 dan i > 0
+        // titik mulainya di 5 dan sebelum 0/nol (beda dari yg di atas)
 
 
         System.out.println();
@@ -28,7 +29,7 @@ public class Perulangan {
 
         //// Hasilkan hanya nomor genap saja / Lompat 1 angka ////
         ////==== Cara 1 ====///
-        for (int i = 0; i < 10; i+=2) {
+        for (int i = 0; i < 10; i+=2) { // ← langsung +2 (1)
             System.out.print(i + " ");
         }
 
@@ -36,7 +37,7 @@ public class Perulangan {
 
         ////==== Cara 2 ====///
         for (int i = 0; i < 10; i++) {
-            if (i % 2 == 0){
+            if (i % 2 == 0){ // ← pakai modulus (2)
                 System.out.print(i + " ");
             }
         }
@@ -46,7 +47,7 @@ public class Perulangan {
         ////==== Cara 3 ====///
         for (int i = 0; i < 10; i++) {
             if (i % 2 == 1){
-                continue;
+                continue;// ← pakai continue (3)
             }
             System.out.print(i + " ");
         }
@@ -55,7 +56,7 @@ public class Perulangan {
 
         ////==== Cara 4 ====///
         for (int i = -1; i < 9; i++){
-            i++;
+            i++; // ← pakai i++ 2x ↑
             System.out.print(i + " ");
         }
 
@@ -149,7 +150,7 @@ public class Perulangan {
         
         System.out.println();
 
-        //================ LENGTH () ====================//
+        //================ LENGTH() atau jumlah kata ====================//
         String password = "jakarta";
         System.out.println(password.length());
 
@@ -175,6 +176,7 @@ public class Perulangan {
         * */
 
         int angka = 7;
+        //Cara 1
         for (int i = 1; i <= angka; i++) {
             for (int j = angka; j >= i; j--) {
                 if (i % 2 == 1){
@@ -188,6 +190,7 @@ public class Perulangan {
 
         System.out.println();
 
+        //Cara 2
         for (int i = 1; i <= angka; i++) {
             for (int j = angka; j >= i; j--) {
                 if (j % 2 == 1){
@@ -201,6 +204,7 @@ public class Perulangan {
 
         System.out.println();
 
+        //Cara 3
         for (int i = 1; i <= angka; i++) {
             for (int j = i; j <= angka; j++) {
                 if (j % 2 == 1){
@@ -211,5 +215,6 @@ public class Perulangan {
             }
             System.out.println();
         }
+        // Apa bedanya, hmm?  -3-
     }
 }

@@ -22,6 +22,7 @@ public class BrowserStack {
         //driver.manage().window().maximize();
         maximize(driver);
 
+        // pasang try catch ini kalau terhalang Cookie saat di run
         try {
             driver.get("https://www.browserstack.com/");
             System.out.println("Buka Browser dan buka URL");
@@ -37,7 +38,7 @@ public class BrowserStack {
                 System.out.println("Accept Cookies");
             }
 
-            // Hitung jumlah menunya
+            // Hitung jumlah menunya yg ada di halaman tsb
             Actions action = new Actions(driver); // menu ↓ di bwh ini ga boleh jauh dari Actions
             List<WebElement> listMenu = driver.findElements(By.xpath("//*[@id=\"product-nav\"]/ul/li"));
             System.out.println(listMenu.size());
@@ -53,7 +54,7 @@ public class BrowserStack {
 
             //Membuat Action dengan mouse
             WebElement btnGetStarted = driver.findElement(By.xpath("//a[@id='signupModalButton']"));
-            //aksi.moveToElement(btnGetStarted).perform();// ← ini untuk hover aja
+            //action.moveToElement(btnGetStarted).perform();// ← ini untuk hover aja
             action.moveToElement(btnGetStarted).click().perform();// ← ini hover dan lalu klik
             System.out.println("klik Get Started");
 
@@ -72,7 +73,7 @@ public class BrowserStack {
             * */
 
             // Hover menu Produk
-            //// Diantara 3 ini yg bisa ↓ biasanya 3x baru berhasil =3=
+            //// Diantara 3 yg dikomen ini yg bisa ↓ biasanya 3x baru berhasil =3=
             //WebElement btnMenuProduct = driver.findElement(By.xpath("//*[@id=\"product-nav\"]/ul/li"));
             //WebElement btnMenuProduct = driver.findElement(By.xpath("//button[contains(@id, 'product-menu')]"));
             WebElement btnMenuProduct = driver.findElement(By.xpath("//button[@id='product-menu-toggle']"));
@@ -80,7 +81,7 @@ public class BrowserStack {
             System.out.println("klik produk menu");
 
             delay(3);
-            driver.quit();
+            driver.quit(); // ← selalu pasang ini tiap testing otomasi
             System.out.println("Keluar dari Browser");
 
         } finally {

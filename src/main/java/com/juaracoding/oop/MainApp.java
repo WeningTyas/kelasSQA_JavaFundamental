@@ -25,7 +25,7 @@ public class MainApp {
         System.out.println("Input di sini:");
         int sisi = scanner.nextInt();
         Kotak kotak = new Kotak(sisi);
-        System.out.println("Luas kotak "+kotak.luas());
+        System.out.println("Luas kotak "+ kotak.luas());
 
         System.out.println();
 
@@ -33,7 +33,6 @@ public class MainApp {
         System.out.println("Echo chat:");
         String namaHari = input.next();
         System.out.println(hari(namaHari));
-
     }
 
     static String hari (String result){

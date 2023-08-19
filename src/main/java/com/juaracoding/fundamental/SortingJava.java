@@ -19,8 +19,5 @@ public class SortingJava {
         }
         System.out.println("Buah dgn nama terpanjang adalah "+ buahTerpanjang);
         //Kalau ada 2 (atau lebih data dgn kondisi yg "sama", maka yg akan dipilih adalah yg paling depan/duluan muncul
-
-
-
     }
 }

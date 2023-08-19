@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 public class DemoQA {
     public static void main(String[] args) {
-        // web Demo https://demoqa.com/text-box //
+        // website Demo https://demoqa.com/text-box //
 
         String path = "E:\\Bootcam\\App\\ChromeDriver\\chromedriver.exe";
         System.setProperty("webdriver.chrome.driver", path);
@@ -38,7 +38,7 @@ public class DemoQA {
         driver.findElement(By.id("submit")).click();
         System.out.println("Isi formnya");
 
-        //validasi if else di assert
+        //validasi if else dgn assert manual
         if(titlePage.contains("Text Box")){ // atau bisa pakai .equalsIgnoreCase()
             System.out.println("Oke!");
         } else {
@@ -54,6 +54,7 @@ public class DemoQA {
         System.out.println("Keluar dari Browser");
     }
 
+    // ini waiting (delay) juga, tapi masih manual
     public static void delay(){
         try {
             Thread.sleep(5000);

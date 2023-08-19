@@ -9,10 +9,12 @@ public class Karyawan {
     private int age;
     private double salary;
 
+    //get utk mengembalikan nilai yg dipanggil
     public String getFirstName() {
         return firstName;
     }
 
+    //set kalau ada nilai baru masuk, lalu tampung
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }

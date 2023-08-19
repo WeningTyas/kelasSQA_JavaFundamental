@@ -1,16 +1,16 @@
-package com.juaracoding.fundamental;
+package com.juaracoding.oop;
 
-public class SoalPertemuanKe7 {
+public class Models {
     int modelYear;
     String modelName;
 
-    public SoalPertemuanKe7(int year, String name) {
+    public Models(int year, String name) {
         modelYear = year;
         modelName = name;
     }
 
     public static void main(String[] args) {
-        SoalPertemuanKe7 myCar = new SoalPertemuanKe7(1969, "Mustang");
+        Models myCar = new Models(1969, "Mustang");
         System.out.println(myCar.modelYear + " " + myCar.modelName);
     }
 }

@@ -2,7 +2,7 @@ package com.juaracoding.testNG;
 
 public class Kotak {
 
-    //kelilin = 4 x sisi
+    //keliling = 4 x sisi
     //luas = sisi x sisi
 
     private double sisi;

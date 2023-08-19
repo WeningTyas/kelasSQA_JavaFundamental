@@ -48,6 +48,6 @@ public class HandlingSelect {
 /*
 * Untuk testing Dropbox atau List bisa dilakukan dgn:
 * - Tekan klik, tekan tombol bawah dan Enter
-* - atau pakai xpath
+* - atau pakai xpath langsung
 * */
 

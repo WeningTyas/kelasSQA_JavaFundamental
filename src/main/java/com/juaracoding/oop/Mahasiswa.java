@@ -21,7 +21,7 @@ public class Mahasiswa {
         System.out.println("Jurusan: " + prodi);
     }
 
-
+    // bisa dipanggil di methode main
     public static void main(String[] args) {
         Mahasiswa murid = new Mahasiswa("Rina","Astuti", "Bisnis");
         murid.viewProfile();

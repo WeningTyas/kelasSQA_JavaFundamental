@@ -5,7 +5,7 @@ import org.testng.annotations.*;
 
 public class ProcedureExecution {
 
-    @BeforeClass // → dikasih nama terbalik Class-Methode-Test-Methode-Class
+    @BeforeClass // → dikasih nama anotasi terbalik [Class-Methode-Test-Methode-Class] dari atas ke bawah
     public void beforeClass(){
         System.out.println("Before Class");
     }
@@ -23,7 +23,8 @@ public class ProcedureExecution {
     public void testDua(){
         System.out.println("Test Dua");
     }
-    @Test (timeOut = 3000) // → untuk eksekusi waktu
+    @Test (timeOut = 3000) // → untuk eksekusi dengan waktu,
+    //// klo waktu tsb tercapai dan fungsi blm selesai jalan, nanti bkl error
     public void testTiga(){
         System.out.println("Test Tiga");
     }

@@ -26,7 +26,7 @@ public class CollectionJava {
         mobil.clear(); // ← membersihkan data array
         System.out.println(mobil);
 
-        //// Tampilkan ke bawah ////
+        //// Tampilkan list array ke bawah ////
         for (int i = 0; i < mobil.size(); i++) {
             System.out.println(mobil.get(i));
         }

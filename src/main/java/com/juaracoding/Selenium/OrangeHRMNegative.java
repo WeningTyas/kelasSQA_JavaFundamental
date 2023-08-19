@@ -25,6 +25,7 @@ public class OrangeHRMNegative {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         System.out.println("Open browser, open URL");
 
+        ////////////////  Ini yg maish kode RAW ///////////////////////
 //        // =========================== LOGIN ================================ //
 //        //Isi Username = Klik kanan > SelectorHub > Copy Relative Xpath
 //        WebElement username = driver.findElement(By.xpath("//input[@placeholder='Username']"));
@@ -89,6 +90,9 @@ public class OrangeHRMNegative {
 //            System.out.println("Failed!");
 //        }
         // ========================= MULAI Dari SINI ======================== //
+        ////////////// Ini udh disederhanakan ///////////////
+        // Hasil nya sama aja sihh...
+
         cobaLogin (driver, "", "");
 
         delay(3);

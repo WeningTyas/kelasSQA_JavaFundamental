@@ -79,6 +79,7 @@ public class HandlingBrowserWindows {
         driver.switchTo().window(parentWindowHandle);
         System.out.println("New Windows END");
         delay(5);
+
         //======================== New Window Message =================================//
         driver.findElement(By.id("messageWindowButton")).click();
 

@@ -29,7 +29,7 @@ public class VariableJava {  // ← ini blok program ke-5
         String namaBootCamp, alamat;
         namaBootCamp = "Juara Coding";
         alamat = "Jakarta";
-        alamat = "Bekasi";
+        alamat = "Bekasi"; // ← yg ini
         System.out.println(namaBootCamp);
         System.out.println(alamat);
         // ↑ maka yg di eksekusi adalah koding terakhir (rewrite)
@@ -56,7 +56,7 @@ public class VariableJava {  // ← ini blok program ke-5
         System.out.println();
         ////////////////////////////////////////////////////////////////
 
-        /// Escape Character ///
+        /// Escape Character (penghapusan kata sebelumnya) ///
         String pathImages = "D:\\Perpustakaan\\Bahasa Program\\Bootcam SQA";
         System.out.println(pathImages);
 
@@ -78,8 +78,8 @@ public class VariableJava {  // ← ini blok program ke-5
         // A. Eksplisit Casting
         long dataLong = 9223;
         int dataInt = (int) dataLong;
-        System.out.println(dataInt); // ← ini berubah jadi Integer bukan Long lagi
-
+        System.out.println(dataInt);
+        // ↑ ini berubah jadi Integer bukan Long lagi
     }
 }
 

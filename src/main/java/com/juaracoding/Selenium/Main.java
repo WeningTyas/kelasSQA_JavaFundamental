@@ -35,6 +35,5 @@ public class Main {
         System.out.println("Keluar dari Browser");
 
         // Karena klo ga di close, nanti Chromenya jadi punya kegebunshin
-
     }
 }

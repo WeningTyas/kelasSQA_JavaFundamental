@@ -22,7 +22,7 @@ public class Contoh {
 
         // ============= Overriding / Polimorp ============//
         // ↓ BangunDatar itu homenya
-        // SegiTiga itu turunannya ↓
+        //   SegiTiga itu turunannya ↓
         BangunDatar bentuk = new SegiTiga();
         bentuk.gambar();
 
@@ -30,6 +30,7 @@ public class Contoh {
 
         // ============= Inheritance ============//
         // Manager ↓ ini home asalnya yg juga memanggil Karyawan
+        // karena ada extends di sana
         Manager user = new Manager();
         user.setFirstName("Malla");
         user.setLastName("Atika Sari");

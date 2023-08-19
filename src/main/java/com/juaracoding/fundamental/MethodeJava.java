@@ -18,13 +18,15 @@ public class MethodeJava {
         String uname= "Sarah";
         String password= "123";
         if (cekLogin(uname, password)){
-            System.out.println("Beranda");
+            System.out.println("ke Beranda");
         } else {
-            System.out.println("Login");
+            System.out.println("tetap di Login");
         }
 
         ////// Pemanggilan Fuction Static //////
         //Perlu dibuat pemanggilan baru
+        // ↓ dibaca: class sebutan = new class()
+        // nanti tinggal di panggil aja sebutannya
         MethodeJava draw = new MethodeJava();
         draw.LuasKubus(5);
 
@@ -40,22 +42,21 @@ public class MethodeJava {
         switch (pilihan){
             case 1:
                 System.out.println("Kotak sisi " + nilai);
-                System.out.println("Luas " +kotakLuas(nilai) +
+                System.out.println("Luas " + kotakLuas(nilai) +
                         ", Keliling "+ kotakKeliling(nilai));
                 break;
             case 2:
                 System.out.println("Kubus " + nilai + " sisi");
-                System.out.println("Volume " +kubusVolume(nilai)+
+                System.out.println("Volume " + kubusVolume(nilai)+
                         ", Luas "+kubusLuas(nilai)+
                         ", Keliling "+kubusKeliling(nilai));
                 break;
             default:
                 System.out.println("Nilai tidak diketahui");
         }
+    } // ← main sampai sini
 
-    }
-
-    //////////// Ini diluar main //////////////
+    ////////////////////// Ini diluar main //////////////////////////////
     //// Function java tanpa parameter
     static void kotak(){
         int sisi = 5;
@@ -97,7 +98,7 @@ public class MethodeJava {
     //Pemanggilan Fuction Static
     public void LuasKubus (int sisi){
         System.out.println((sisi*sisi) * 6);
-        //gak perlu return
+        //gak perlu return, karena cuma print, bukannya fungsi pengembalian
     }
 
     //Function berbaris
